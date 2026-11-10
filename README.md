@@ -1,3 +1,4 @@
 ELCK KISUMU
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/abf99ee4-304e-4f0b-afdf-ea4d93457ab5" />
+<img width="1354" height="625" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/388df681-72d8-4262-b75c-a84c0dcc5c11" />
+
 A website for a church
