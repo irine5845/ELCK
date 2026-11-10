@@ -1,0 +1,1511 @@
+
+:root {
+    --primary: #32145c;
+    --secondary: #4d2678;
+    --gold: #d6a448;
+    --light: #f8f7fb;
+    --dark: #22202a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+.main-navbar {
+    background: var(--primary);
+    padding: 16px 0;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: #24152e;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background: #bd8b32;
+    color: white;
+}
+
+section {
+    padding: 70px 0;
+}
+
+
+/* =====================================
+   ELCK KISUMU - MAIN STYLESHEET
+===================================== */
+
+:root {
+    --primary: #32145c;
+    --secondary: #4b2675;
+    --gold: #d6a448;
+    --light: #f8f7fb;
+    --dark: #24212a;
+    --muted: #77727e;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 85px 0;
+}
+
+/* TOP BAR */
+
+.top-bar {
+    background: #24103f;
+    color: white;
+    font-size: 13px;
+    padding: 9px 0;
+}
+
+/* NAVIGATION */
+
+.main-navbar {
+    background: white;
+    padding: 17px 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.brand-symbol {
+    color: var(--gold);
+    font-size: 35px;
+}
+
+.navbar-brand small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #777;
+}
+
+.nav-link {
+    color: var(--dark) !important;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 6px;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--gold) !important;
+}
+
+.btn-gold {
+    background: var(--gold);
+    border: 1px solid var(--gold);
+    color: #24152e;
+    font-weight: 700;
+    padding: 11px 25px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.btn-gold:hover {
+    background: #b88937;
+    border-color: #b88937;
+    color: white;
+}
+
+.btn-purple {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-purple:hover {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25, 10, 45, .92),
+            rgba(25, 10, 45, .48)
+        ),
+        url('../images/hero-church.jpg');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-section h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.12;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-section h1 span {
+    color: var(--gold);
+}
+
+.hero-section p {
+    max-width: 580px;
+    font-size: 17px;
+    color: #eee;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 18px 0;
+    background: rgba(24, 10, 42, .75);
+    color: var(--gold);
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* SECTION HEADINGS */
+
+.section-label {
+    color: #a47a32;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+/* SERVICE SECTION */
+
+.service-section {
+    padding: 55px 0;
+    background: var(--white);
+}
+
+.service-card {
+    text-align: center;
+    padding: 30px 25px;
+    height: 100%;
+    border: 1px solid #eeeaf2;
+    transition: .3s;
+    background: white;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 35px rgba(50,20,92,.09);
+}
+
+.service-icon {
+    font-size: 38px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.service-card h4 {
+    color: var(--primary);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    background: var(--light);
+}
+
+.about-image {
+    min-height: 420px;
+    position: relative;
+    background: linear-gradient(135deg, #32145c, #9872b5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,.85));
+}
+
+.image-caption h4 {
+    font-size: 23px;
+}
+
+.image-caption p {
+    margin-bottom: 0;
+}
+
+.about-points {
+    margin: 25px 0;
+}
+
+.about-points p {
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* MISSION AND VISION */
+
+.mission-section {
+    background: var(--primary);
+}
+
+.mission-card {
+    height: 100%;
+    padding: 45px 35px;
+    border: 1px solid rgba(255,255,255,.2);
+    color: white;
+    background: rgba(255,255,255,.06);
+}
+
+.mission-icon {
+    color: var(--gold);
+    font-size: 35px;
+}
+
+.mission-card h3 {
+    margin: 20px 0;
+    font-size: 29px;
+}
+
+.mission-card p {
+    color: #e5ddeb;
+    margin-bottom: 0;
+}
+
+/* LEADERSHIP */
+
+.leadership-section {
+    background: white;
+}
+
+.leader-card {
+    background: var(--light);
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.leader-image {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.leader-placeholder {
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee8f5;
+    color: var(--gold);
+    font-size: 75px;
+}
+
+.leader-details {
+    padding: 25px 15px;
+}
+
+.leader-details h4 {
+    color: var(--primary);
+    font-size: 22px;
+}
+
+.leader-details span {
+    color: #a47a32;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* SERMONS */
+
+.sermons-section {
+    background: var(--light);
+}
+
+.sermon-card {
+    background: white;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04);
+    overflow: hidden;
+}
+
+.sermon-image {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #32145c, #78539b);
+    color: white;
+}
+
+.sermon-image span {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4px;
+}
+
+.sermon-content {
+    padding: 25px;
+}
+
+.sermon-content small {
+    color: #a47a32;
+    font-weight: 700;
+}
+
+.sermon-content h4 {
+    color: var(--primary);
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.sermon-content p {
+    color: var(--muted);
+}
+
+.sermon-content a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* EVENTS */
+
+.events-section {
+    background: white;
+}
+
+.event-card {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background: var(--light);
+    height: 100%;
+    border-left: 3px solid var(--gold);
+}
+
+.event-date {
+    min-width: 65px;
+    height: 75px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.event-date small {
+    color: var(--gold);
+    font-size: 12px;
+}
+
+.event-content h4 {
+    color: var(--primary);
+    font-size: 21px;
+}
+
+.event-content p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.event-content small {
+    color: #a47a32;
+}
+
+/* GIVING */
+
+.giving-section {
+    background:
+        linear-gradient(rgba(35,12,60,.91), rgba(35,12,60,.91)),
+        url('../images/hero-church.jpg');
+
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.giving-section h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.giving-section p {
+    color: #e5ddeb;
+    margin-bottom: 30px;
+}
+
+.light-label {
+    color: var(--gold);
+}
+
+/* MEMBERSHIP */
+
+.membership-section {
+    background: var(--light);
+}
+
+.membership-section h2 {
+    color: var(--primary);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.membership-section p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: #1c0b30;
+    color: #ddd5e6;
+    padding: 70px 0 20px;
+}
+
+.footer-brand {
+    color: var(--gold);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.site-footer h5 {
+    color: white;
+    margin-bottom: 22px;
+    font-size: 19px;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer ul li {
+    margin-bottom: 12px;
+}
+
+.site-footer a {
+    color: #cfc4da;
+    transition: .3s;
+}
+
+.site-footer a:hover {
+    color: var(--gold);
+}
+
+.site-footer p {
+    color: #cfc4da;
+    font-size: 14px;
+}
+
+.site-footer hr {
+    border-color: rgba(255,255,255,.2);
+    margin: 40px 0 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+
+    .hero-section {
+        min-height: 550px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    .top-bar {
+        text-align: center;
+    }
+
+    .top-bar .container {
+        justify-content: center !important;
+        gap: 5px;
+    }
+
+    .hero-section {
+        min-height: 570px;
+        background-position: 60% center;
+    }
+
+    .hero-section h1 {
+        font-size: 44px;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .about-image {
+        min-height: 300px;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        flex-direction: column;
+    }
+
+}
+
+
+/* =================================
+   ABOUT US PAGE
+================================= */
+
+.page-banner {
+    background:
+        linear-gradient(
+            rgba(40, 15, 70, .91),
+            rgba(40, 15, 70, .91)
+        ),
+        url('../images/hero-church.jpg');
+
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+}
+
+.page-banner h1 {
+    font-size: clamp(38px, 5vw, 55px);
+    margin: 15px 0;
+}
+
+.page-banner p {
+    color: #e7dfee;
+}
+
+.breadcrumb-custom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--gold);
+}
+
+.breadcrumb-custom a {
+    color: white;
+}
+
+.about-intro {
+    background: white;
+}
+
+.about-page-image {
+    height: 420px;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #eee8f5;
+}
+
+.about-page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-mission {
+    background: var(--light);
+}
+
+.purpose-card {
+    background: white;
+    padding: 45px 35px;
+    height: 100%;
+    border-bottom: 4px solid var(--gold);
+    box-shadow: 0 5px 25px rgba(0,0,0,.04);
+}
+
+.purpose-icon {
+    color: var(--gold);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.purpose-card h3 {
+    color: var(--primary);
+    margin-bottom: 18px;
+}
+
+.purpose-card p {
+    color: var(--muted);
+}
+
+.values-section {
+    background: white;
+}
+
+.value-card {
+    padding: 35px 25px;
+    height: 100%;
+    text-align: center;
+    background: var(--light);
+    transition: .3s;
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.07);
+}
+
+.value-card span {
+    display: block;
+    color: var(--gold);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.value-card h4 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.about-cta {
+    background: var(--primary);
+    color: white;
+}
+
+.about-cta h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    color: #e4dbea;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+@media(max-width: 767px) {
+
+    .page-banner {
+        padding: 70px 0;
+    }
+
+    .about-page-image {
+        height: 300px;
+    }
+
+    .about-cta h2 {
+        font-size: 29px;
+    }
+}
+
+
+/* ==========================================
+   ELCK KISUMU - LEADERSHIP PAGE
+========================================== */
+
+/* Leadership section */
+.leadership-section {
+    background: #f8f7fb;
+    padding: 90px 0;
+}
+
+/* Section heading */
+.leadership-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.leadership-section .section-title {
+    color: #32145c;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.leadership-section .section-heading p {
+    color: #77727e;
+    font-size: 15px;
+}
+
+/* Leadership cards */
+.leader-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #eeeaf2;
+    box-shadow: 0 5px 20px rgba(50, 20, 92, 0.05);
+    transition: all 0.35s ease;
+    text-align: center;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(50, 20, 92, 0.13);
+}
+
+/* Leader photograph */
+.leader-image {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.leader-card:hover .leader-image {
+    transform: scale(1.04);
+}
+
+/* Image placeholder */
+.leader-placeholder {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #32145c,
+        #76519a
+    );
+    color: #d6a448;
+    font-size: 75px;
+}
+
+/* Leader information */
+.leader-details {
+    padding: 28px 22px 30px;
+    position: relative;
+}
+
+.leader-details::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #d6a448;
+    margin: 0 auto 18px;
+}
+
+.leader-details h4 {
+    color: #32145c;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.leader-details span {
+    display: inline-block;
+    color: #b18436;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.leader-details p {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* Leadership CTA */
+.about-cta {
+    background: linear-gradient(
+        135deg,
+        #32145c,
+        #4b2675
+    );
+    padding: 85px 20px;
+    color: #ffffff;
+}
+
+.about-cta h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.about-cta p {
+    color: #e5ddeb;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-cta .btn-gold {
+    padding: 13px 30px;
+    border-radius: 5px;
+}
+
+/* Empty leadership state */
+.leadership-section .text-center p {
+    color: #77727e;
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+
+    .leader-image,
+    .leader-placeholder {
+        height: 290px;
+    }
+
+    .leadership-section .section-title {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .leadership-section {
+        padding: 60px 0;
+    }
+
+    .leadership-section .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .leadership-section .section-title {
+        font-size: 30px;
+    }
+
+    .leader-image,
+    .leader-placeholder {
+        height: 320px;
+    }
+
+    .leader-details {
+        padding: 25px 18px;
+    }
+
+    .about-cta {
+        padding: 65px 20px;
+    }
+
+    .about-cta h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* ==========================================
+   ELCK KISUMU - SERMONS PAGE
+========================================== */
+
+.sermons-page-section {
+    background: #f8f7fb;
+    padding: 90px 0;
+}
+
+.sermons-page-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.sermons-page-section .section-title {
+    color: #32145c;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.sermons-page-section .section-heading p {
+    color: #77727e;
+    line-height: 1.8;
+}
+
+.sermon-card {
+    height: 100%;
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(50, 20, 92, 0.06);
+    transition: all 0.3s ease;
+}
+
+.sermon-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(50, 20, 92, 0.12);
+}
+
+.sermon-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #211333;
+}
+
+.sermon-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.sermon-video-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #32145c, #76519a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sermon-video-placeholder span {
+    color: #d6a448;
+    font-size: 55px;
+}
+
+.sermon-video-placeholder p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.sermon-content {
+    padding: 25px;
+}
+
+.sermon-category {
+    color: #b18436;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.sermon-content h3 {
+    color: #32145c;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.sermon-preacher,
+.sermon-date {
+    color: #77727e;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.sermon-preacher strong {
+    color: #32145c;
+}
+
+.sermon-description {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.sermons-empty {
+    background: white;
+    text-align: center;
+    padding: 65px 25px;
+    border-radius: 10px;
+    border: 1px solid #eeeaf2;
+}
+
+.empty-icon {
+    color: #d6a448;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.sermons-empty h3 {
+    color: #32145c;
+    font-weight: 700;
+}
+
+.sermons-empty p {
+    color: #77727e;
+    max-width: 550px;
+    margin: 12px auto 0;
+    line-height: 1.8;
+}
+
+.sermon-cta {
+    background: linear-gradient(135deg, #32145c, #4b2675);
+    color: white;
+    padding: 85px 20px;
+}
+
+.sermon-cta h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.sermon-cta p {
+    color: #e5ddeb;
+    margin-bottom: 28px;
+    line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+    .sermons-page-section {
+        padding: 60px 0;
+    }
+
+    .sermons-page-section .section-title {
+        font-size: 30px;
+    }
+
+    .sermon-content {
+        padding: 22px;
+    }
+
+    .sermon-cta {
+        padding: 60px 20px;
+    }
+
+    .sermon-cta h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* ==========================================
+   ELCK KISUMU - EVENTS PAGE
+========================================== */
+
+.events-page-section {
+    background: #f8f7fb;
+    padding: 90px 0;
+}
+
+.events-page-section .section-heading,
+.announcements-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.events-page-section .section-title,
+.announcements-section .section-title {
+    color: #32145c;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.events-page-section .section-heading p,
+.announcements-section .section-heading p {
+    color: #77727e;
+    line-height: 1.8;
+}
+
+.event-card {
+    height: 100%;
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(50, 20, 92, 0.06);
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(50, 20, 92, 0.12);
+}
+
+.event-image-wrapper {
+    height: 220px;
+    overflow: hidden;
+}
+
+.event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.event-card:hover .event-image {
+    transform: scale(1.05);
+}
+
+.event-image-placeholder {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #32145c, #76519a);
+    color: #fff;
+}
+
+.event-image-placeholder span {
+    font-size: 55px;
+    color: #d6a448;
+}
+
+.event-image-placeholder p {
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.event-content {
+    padding: 25px;
+}
+
+.event-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.event-day {
+    background: #32145c;
+    color: #fff;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.event-month {
+    color: #b18436;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.event-content h3 {
+    color: #32145c;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.event-time,
+.event-location {
+    color: #77727e;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.event-description {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.events-empty {
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 10px;
+    padding: 55px 25px;
+    text-align: center;
+}
+
+.events-empty .empty-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.events-empty h3 {
+    color: #32145c;
+    font-weight: 700;
+}
+
+.events-empty p {
+    color: #77727e;
+    max-width: 550px;
+    margin: 10px auto 0;
+    line-height: 1.8;
+}
+
+/* ANNOUNCEMENTS */
+
+.announcements-section {
+    background: #fff;
+    padding: 90px 0;
+}
+
+.announcement-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.announcement-card {
+    display: flex;
+    gap: 22px;
+    padding: 28px;
+    margin-bottom: 20px;
+    background: #f8f7fb;
+    border-left: 4px solid #d6a448;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(50, 20, 92, 0.08);
+}
+
+.announcement-icon {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #32145c;
+    color: #d6a448;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.announcement-content h3 {
+    color: #32145c;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.announcement-date {
+    color: #b18436 !important;
+    font-size: 12px !important;
+    font-weight: 600;
+    margin-bottom: 12px !important;
+}
+
+.announcement-content p {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* EVENTS CTA */
+
+.events-cta {
+    background: linear-gradient(135deg, #32145c, #4b2675);
+    color: #fff;
+    padding: 85px 20px;
+}
+
+.events-cta h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.events-cta p {
+    color: #e5ddeb;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 767px) {
+    .events-page-section,
+    .announcements-section {
+        padding: 60px 0;
+    }
+
+    .events-page-section .section-title,
+    .announcements-section .section-title {
+        font-size: 30px;
+    }
+
+    .announcement-card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .announcement-content h3 {
+        font-size: 18px;
+    }
+
+    .events-cta {
+        padding: 60px 20px;
+    }
+
+    .events-cta h2 {
+        font-size: 29px;
+    }
+}
