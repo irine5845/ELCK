@@ -54,3 +54,41 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+
+// ==========================================
+// ELCK KISUMU - GALLERY IMAGE VIEWER
+// ==========================================
+
+document.addEventListener('DOMContentLoaded', function () {
+    const galleryModal = document.getElementById('galleryModal');
+
+    if (!galleryModal) {
+        return;
+    }
+
+    galleryModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+
+        if (!button) {
+            return;
+        }
+
+        const image = button.getAttribute('data-image');
+        const title = button.getAttribute('data-title');
+        const description = button.getAttribute('data-description');
+
+        const modalImage = document.getElementById('galleryModalImage');
+        const modalTitle = document.getElementById('galleryModalLabel');
+        const modalDescription = document.getElementById('galleryModalDescription');
+
+        modalImage.src = image;
+        modalImage.alt = title || 'Church photograph';
+        modalTitle.textContent = title || 'ELCK KISUMU Gallery';
+        modalDescription.textContent = description || '';
+    });
+
+    galleryModal.addEventListener('hidden.bs.modal', function () {
+        document.getElementById('galleryModalImage').src = '';
+    });
+});

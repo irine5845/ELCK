@@ -1509,3 +1509,860 @@ section {
         font-size: 29px;
     }
 }
+
+
+/* ==========================================
+   ELCK KISUMU - GALLERY PAGE
+========================================== */
+
+.gallery-page-section {
+    background: #f8f7fb;
+    padding: 90px 0;
+}
+
+.gallery-page-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.gallery-page-section .section-title {
+    color: #32145c;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.gallery-page-section .section-heading p {
+    color: #77727e;
+    line-height: 1.8;
+}
+
+.gallery-card {
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eeeaf2;
+    box-shadow: 0 5px 20px rgba(50, 20, 92, 0.06);
+    transition: all 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(50, 20, 92, 0.13);
+}
+
+.gallery-image-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 260px;
+    padding: 0;
+    border: 0;
+    background: #32145c;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.08);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(50, 20, 92, 0.45);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay,
+.gallery-image-button:focus-visible .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-zoom {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #d6a448;
+    color: #32145c;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.gallery-caption {
+    padding: 20px;
+}
+
+.gallery-caption h3 {
+    color: #32145c;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.gallery-caption p {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.gallery-empty {
+    text-align: center;
+    background: #fff;
+    padding: 65px 25px;
+    border-radius: 10px;
+    border: 1px solid #eeeaf2;
+}
+
+.gallery-empty-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.gallery-empty h3 {
+    color: #32145c;
+    font-weight: 700;
+}
+
+.gallery-empty p {
+    color: #77727e;
+    line-height: 1.8;
+}
+
+/* IMAGE VIEWER */
+
+.gallery-modal-content {
+    background: #241438;
+    color: #fff;
+    border: 1px solid rgba(214, 164, 72, 0.4);
+}
+
+.gallery-modal-content .modal-header {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.gallery-modal-content .modal-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+.gallery-modal-image {
+    max-width: 100%;
+    max-height: 72vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+#galleryModalDescription {
+    color: #e5ddeb;
+    line-height: 1.7;
+}
+
+/* GALLERY CTA */
+
+.gallery-cta {
+    background: linear-gradient(135deg, #32145c, #4b2675);
+    color: #fff;
+    padding: 85px 20px;
+}
+
+.gallery-cta h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.gallery-cta p {
+    color: #e5ddeb;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 767px) {
+    .gallery-page-section {
+        padding: 60px 0;
+    }
+
+    .gallery-page-section .section-title {
+        font-size: 30px;
+    }
+
+    .gallery-image-button {
+        height: 240px;
+    }
+
+    .gallery-cta {
+        padding: 60px 20px;
+    }
+
+    .gallery-cta h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* ==========================================
+   ELCK KISUMU - GIVING PAGE
+========================================== */
+
+.giving-intro {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.giving-intro .section-title {
+    color: #32145c;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 15px 0 20px;
+}
+
+.giving-intro p {
+    color: #77727e;
+    line-height: 1.9;
+}
+
+.giving-verse {
+    background: linear-gradient(135deg, #32145c, #76519a);
+    padding: 45px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.verse-icon {
+    color: #d6a448;
+    font-size: 45px;
+}
+
+.giving-verse blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.verse-reference {
+    color: #e9c77f;
+    font-weight: 700;
+}
+
+.giving-method-section {
+    background: #f8f7fb;
+    padding: 90px 0;
+}
+
+.giving-method-section .section-heading {
+    margin-bottom: 45px;
+}
+
+.giving-method-section .section-title,
+.giving-categories .section-title {
+    color: #32145c;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.mpesa-card {
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 12px;
+    padding: 35px 25px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(50, 20, 92, 0.06);
+}
+
+.mpesa-logo {
+    display: inline-block;
+    background: #00a859;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 800;
+    padding: 9px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.mpesa-card h3 {
+    color: #32145c;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.payment-number {
+    color: #00a859;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px 0 10px;
+    overflow-wrap: anywhere;
+}
+
+.payment-pending {
+    color: #b18436;
+    font-size: 15px;
+    font-weight: 700;
+    background: #fff8e9;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0 10px;
+}
+
+.mpesa-card p {
+    color: #77727e;
+    font-size: 13px;
+}
+
+.giving-instructions {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 55px;
+}
+
+.giving-instructions h3 {
+    color: #32145c;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.instruction-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.instruction-item span {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #32145c;
+    color: #d6a448;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.instruction-item h4 {
+    color: #32145c;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.instruction-item p {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.payment-warning {
+    background: #fff8e9;
+    color: #75551b;
+    padding: 18px;
+    border-left: 4px solid #d6a448;
+    border-radius: 5px;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.giving-categories {
+    background: #fff;
+    padding: 90px 0;
+}
+
+.giving-categories .section-heading {
+    margin-bottom: 45px;
+}
+
+.giving-category-card {
+    background: #f8f7fb;
+    border: 1px solid #eeeaf2;
+    border-radius: 10px;
+    padding: 35px 25px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.giving-category-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(50, 20, 92, 0.1);
+}
+
+.category-icon {
+    color: #d6a448;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.giving-category-card h3 {
+    color: #32145c;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.giving-category-card p {
+    color: #77727e;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.giving-cta {
+    background: linear-gradient(135deg, #32145c, #4b2675);
+    color: #fff;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.giving-cta h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.giving-cta p {
+    color: #e5ddeb;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 767px) {
+    .giving-intro,
+    .giving-method-section,
+    .giving-categories {
+        padding: 60px 0;
+    }
+
+    .giving-intro .section-title,
+    .giving-method-section .section-title,
+    .giving-categories .section-title {
+        font-size: 30px;
+    }
+
+    .giving-verse {
+        padding: 30px 20px;
+    }
+
+    .giving-verse blockquote {
+        font-size: 18px;
+    }
+
+    .giving-instructions {
+        padding: 25px 15px;
+    }
+
+    .giving-cta h2 {
+        font-size: 29px;
+    }
+}
+
+
+/* ==========================================
+   ELCK KISUMU - CONTACT PAGE
+========================================== */
+
+.contact-info-section {
+    background: #f8f7fb;
+    padding: 85px 0;
+}
+
+.contact-info-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.contact-info-section .section-title,
+.contact-form-section .section-title,
+.contact-location-section .section-title {
+    color: #32145c;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.contact-info-section .section-heading p {
+    color: #77727e;
+    line-height: 1.8;
+}
+
+.contact-info-card {
+    height: 100%;
+    padding: 35px 25px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(50, 20, 92, 0.05);
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(50, 20, 92, 0.1);
+}
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #32145c;
+    color: #d6a448;
+    font-size: 27px;
+}
+
+.contact-info-card h3 {
+    color: #32145c;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.contact-info-card p,
+.contact-info-card a {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-info-card a {
+    text-decoration: none;
+}
+
+.contact-info-card a:hover {
+    color: #b18436;
+}
+
+/* CONTACT FORM */
+
+.contact-form-section {
+    background: #fff;
+    padding: 90px 0;
+}
+
+.contact-form-section .section-title {
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    color: #77727e;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.contact-note {
+    display: flex;
+    gap: 18px;
+    padding: 25px;
+    background: #f8f7fb;
+    border-left: 4px solid #d6a448;
+    border-radius: 7px;
+}
+
+.contact-note > span {
+    color: #d6a448;
+    font-size: 32px;
+}
+
+.contact-note h4 {
+    color: #32145c;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact-note p {
+    color: #77727e;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.contact-form-card {
+    padding: 35px;
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(50, 20, 92, 0.07);
+}
+
+.contact-form-card label {
+    display: block;
+    color: #32145c;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-form-card .form-control {
+    min-height: 48px;
+    border: 1px solid #e4dfeb;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+}
+
+.contact-form-card textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form-card .form-control:focus {
+    border-color: #76519a;
+    box-shadow: 0 0 0 3px rgba(118, 81, 154, 0.12);
+}
+
+.contact-submit {
+    padding: 13px 28px;
+    font-weight: 700;
+    border: none;
+}
+
+.contact-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* LOCATION */
+
+.contact-location-section {
+    background: #f8f7fb;
+    padding: 85px 0;
+}
+
+.contact-location-section > .container > p {
+    color: #77727e;
+    max-width: 650px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+}
+
+.location-placeholder {
+    max-width: 800px;
+    margin: auto;
+    padding: 55px 25px;
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(50, 20, 92, 0.05);
+}
+
+.location-placeholder > span {
+    font-size: 45px;
+}
+
+.location-placeholder h3 {
+    color: #32145c;
+    font-weight: 700;
+    margin: 15px 0 10px;
+}
+
+.location-placeholder p {
+    color: #77727e;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .contact-info-section,
+    .contact-form-section,
+    .contact-location-section {
+        padding: 60px 0;
+    }
+
+    .contact-info-section .section-title,
+    .contact-form-section .section-title,
+    .contact-location-section .section-title {
+        font-size: 30px;
+    }
+
+    .contact-form-card {
+        padding: 22px 18px;
+    }
+
+    .contact-note {
+        padding: 20px;
+    }
+
+    .location-placeholder {
+        padding: 40px 20px;
+    }
+}
+
+
+/* ==========================================
+   ELCK KISUMU - MEMBERSHIP PAGE
+========================================== */
+
+.membership-intro {
+    background: #fff;
+    padding: 75px 20px;
+}
+
+.membership-intro .container {
+    max-width: 800px;
+}
+
+.membership-intro .section-title {
+    color: #32145c;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.membership-intro p {
+    color: #77727e;
+    line-height: 1.9;
+}
+
+.membership-form-section {
+    background: #f8f7fb;
+    padding: 80px 15px;
+}
+
+.membership-form-card {
+    max-width: 950px;
+    margin: auto;
+    padding: 45px;
+    background: #fff;
+    border: 1px solid #eeeaf2;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(50, 20, 92, 0.07);
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-heading h2 {
+    color: #32145c;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.form-heading p {
+    color: #77727e;
+}
+
+.membership-form-card label {
+    display: block;
+    color: #32145c;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.membership-form-card .form-control,
+.membership-form-card .form-select {
+    min-height: 50px;
+    border: 1px solid #e4dfeb;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+}
+
+.membership-form-card .form-control:focus,
+.membership-form-card .form-select:focus {
+    border-color: #76519a;
+    box-shadow: 0 0 0 3px rgba(118, 81, 154, 0.12);
+}
+
+.membership-consent {
+    background: #f8f7fb;
+    border-left: 4px solid #d6a448;
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.membership-consent p {
+    color: #77727e;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.membership-submit {
+    padding: 14px 35px;
+    font-weight: 700;
+    border: none;
+}
+
+.membership-cta {
+    background: linear-gradient(135deg, #32145c, #4b2675);
+    color: #fff;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.membership-cta h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.membership-cta p {
+    color: #e5ddeb;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 767px) {
+    .membership-intro {
+        padding: 55px 20px;
+    }
+
+    .membership-intro .section-title {
+        font-size: 30px;
+    }
+
+    .membership-form-section {
+        padding: 55px 12px;
+    }
+
+    .membership-form-card {
+        padding: 25px 18px;
+    }
+
+    .form-heading h2 {
+        font-size: 24px;
+    }
+
+    .membership-cta {
+        padding: 60px 20px;
+    }
+
+    .membership-cta h2 {
+        font-size: 29px;
+    }
+}
